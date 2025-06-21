@@ -7,6 +7,7 @@ from sklearn.preprocessing import LabelEncoder, StandardScaler
 st.set_page_config(page_title="Titanic Survival Predictor", layout="wide")
 st.title("🚢 Titanic Survival Prediction")
 st.markdown("Choose a model and enter passenger details to predict survival outcome.")
+st.markdown("Enter the inputs by clicking on the >> icon at the top left corner.")
 
 # Sidebar inputs
 st.sidebar.header("Passenger Details")
