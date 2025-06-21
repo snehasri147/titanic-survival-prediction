@@ -10,15 +10,15 @@ st.markdown("Choose a model and enter passenger details to predict survival outc
 st.markdown("Enter the inputs by clicking on the >> icon at the top left corner.")
 
 # Sidebar inputs
-st.sidebar.header("Passenger Details")
-pclass = st.sidebar.selectbox("Passenger Class", [1, 2, 3])
-sex = st.sidebar.selectbox("Sex", ['male', 'female'])
-age = st.sidebar.slider("Age", 0, 80, 25)
-sibsp = st.sidebar.number_input("Siblings/Spouses Aboard", 0, 10, 0)
-parch = st.sidebar.number_input("Parents/Children Aboard", 0, 10, 0)
-fare = st.sidebar.slider("Fare", 0.0, 600.0, 50.0)
-embarked = st.sidebar.selectbox("Embarked", ['C', 'Q', 'S'])
-model_name = st.sidebar.selectbox("Model", [
+st.header("Passenger Details")
+pclass = st.selectbox("Passenger Class", [1, 2, 3])
+sex = st.selectbox("Sex", ['male', 'female'])
+age = st.slider("Age", 0, 80, 25)
+sibsp = st.number_input("Siblings/Spouses Aboard", 0, 10, 0)
+parch = st.number_input("Parents/Children Aboard", 0, 10, 0)
+fare = st.slider("Fare", 0.0, 600.0, 50.0)
+embarked = st.selectbox("Embarked", ['C', 'Q', 'S'])
+model_name = st.selectbox("Model", [
     "Logistic Regression", "Decision Tree", "Random Forest", "Naive Bayes"
 ])
 
